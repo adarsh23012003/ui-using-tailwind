@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+        <div className="px-5 lg:px-14 xl:px-20 py-10">
+          <div className="sm:flex max-w-3xl sm:h-96 m-auto rounded">
+            <div className="w-full sm:w-[55%] flex justify-center items-center bg-lightPurple border border-lightblue border-b-0 sm:border-b-[1px] sm:border-r-0 rounded-t sm:rounded-tr-none sm:rounded-l">
+              <div className="w-full p-5 sm:p-10">
+                <div className="text-center">
+                  <h3 className="text-2xl sm:text-3xl font-semibold gradient-text">
+                    Welcome Back
+                  </h3>
+                  <hr className="w-20 border-2 rounded m-auto my-2 text-white" />
+                  <div className="w-full flex justify-center items-center gap-2 my-3">
+                    <Link
+                      href="#"
+                      className="border border-lightblue p-2 text-lightblue rounded-full"
+                    >
+                      <FaFacebookF className="text-sm" />
+                    </Link>
+                    <Link
+                      href="#"
+                      className="border border-lightblue p-2 text-lightblue rounded-full"
+                    >
+                      <FaLinkedinIn className="text-sm" />
+                    </Link>
+                    <Link
+                      href="#"
+                      className="border border-lightblue p-2 text-lightblue rounded-full"
+                    >
+                      <FaGoogle className="text-sm" />
+                    </Link>
+                  </div>
+                </div>
+                <form className="text-center">
+                  <div className="mb-4 flex flex-col">
+                    <input
+                      type="email"
+                      id="email"
+                      title="Enter Your Email Address"
+                      required
+                      placeholder="Enter Your Email"
+                      name="email"
+                      className="w-full py-2 px-3 rounded-full border focus:border-blue bg-lightPurple placeholder:text-mediumgray text-mediumgray text-sm outline-none transition-all duration-[0.5s] ease-in-out"
+                    />
+                  </div>
+                  <div className="mb-2 flex flex-col">
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      title="Enter Your Password"
+                      required
+                      placeholder="Enter Your Password"
+                      className="w-full py-2 px-3 rounded-full border focus:border-blue bg-lightPurple placeholder:text-mediumgray text-mediumgray text-sm outline-none transition-all duration-[0.5s] ease-in-out"
+                    />
+                  </div>
+                  <div className="mb-4 flex justify-between">
+                    <div className="flex gap-1.5 items-center">
+                      <input
+                        type="checkbox"
+                        id="remember"
+                        required
+                        name="remember"
+                        className="w-3.5 h-3.5"
+                      />
+                      <label
+                        htmlFor="remember"
+                        className="text-sm text-mediumgray"
+                      >
+                        Remember Me
+                      </label>
+                    </div>
+                    <div>
+                      <a
+                        href="#"
+                        target="_blank"
+                        title="Forgot Password?"
+                        rel="noopener noreferrer"
+                        className="text-sm text-blue"
+                      >
+                        Forgot Password?
+                      </a>
+                    </div>
+                  </div>
+                  <button className="border border-blue hover:border-mediumgray py-[6px] px-9 focus:outline-none rounded-full font-medium bg-blue hover:bg-lightPurple text-white hover:text-mediumgray duration-700">
+                    Sign In
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div className="w-full sm:w-[45%] flex justify-center items-center bg-purple rounded-b sm:rounded-bl-none sm:rounded-r">
+              <div className="text-center text-white p-5 sm:p-10">
+                <h3 className="text-2xl sm:text-3xl font-semibold">
+                  New Customer ?
+                </h3>
+                <hr className="w-20 border-2 rounded m-auto my-2" />
+                <p className="text-sm">
+                  Fill up personal information and start journey with us.
+                </p>
+                <Link href="/account/sign_up">
+                  <button className="border border-blue hover:border-white py-[6px] px-9 focus:outline-none rounded-full font-medium bg-blue hover:bg-purple text-white duration-700 my-8">
+                    Sign Up
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
